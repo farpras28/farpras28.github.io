@@ -1,0 +1,49 @@
+$height: 34px;
+
+.sub-navigation {
+  text-align: center;
+  font-size: 0;
+  background-color: $page-color;
+}
+
+.sub-navigation__list {
+  @extend %bare-list;
+
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  border: 1px solid $brand-color;
+  border-radius: 5px;
+}
+
+.sub-navigation__item {
+  position: relative;
+  display: table-cell;
+  margin: 0 15px;
+  font-size: 15px;
+  border-left: 1px solid $brand-color;
+
+  &:first-child {
+    border-left: 0;
+  }
+}
+
+.sub-navigation__link {
+  display: block;
+  height: $height;
+  line-height: $height;
+  color: $brand-color;
+
+  &:hover {
+    color: $brand-color;
+  }
+}
+
+.sub-navigation__item--active a {
+  background-color: $brand-color;
+  color: #fff;
+
+  &:hover {
+    color: #fff;
+  }
+}

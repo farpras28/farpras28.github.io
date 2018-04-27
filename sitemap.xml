@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://www.nayaabkhan.me/</loc>
+    <changefreq>hourly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.nayaabkhan.me/react</loc>
+    <changefreq>hourly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.nayaabkhan.me/opinion</loc>
+    <changefreq>hourly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.nayaabkhan.me/design</loc>
+    <changefreq>hourly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.nayaabkhan.me/about</loc>
+    <changefreq>hourly</changefreq>
+  </url>
+</urlset>

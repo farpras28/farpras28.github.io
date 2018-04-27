@@ -1,0 +1,24 @@
+<ul class="post-listing">
+
+  {% for post in include.posts %}
+    <li class="post-listing__item">
+      <a href="{{ post.url | prepend: site.baseurl }}" class="post-listing__link">
+        <div class="post-listing__image">
+          <img src="{{ post.slug | prepend: '/images/hero-images/' | prepend: site.baseurl | append: '.svg' }}"/>
+        </div>
+
+        <h2 class="post-listing__title">
+          {{ post.title }}
+        </h2>
+      </a>
+
+      <div class="post-listing__meta">
+        <div class="post-listing__date">{{ post.date | date: "%B %-d, %Y" }}</div>
+        <div class="post-listing__comment-count"><a href="{{ post.url | prepend: site.url }}#disqus_thread"></a></div>
+      </div>
+    </li>
+  {% endfor %}
+
+</ul>
+
+<script id="dsq-count-scr" src="//nayaabkhan-me.disqus.com/count.js" async></script>

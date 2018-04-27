@@ -1,0 +1,61 @@
+.post-listing {
+  @extend %bare-list;
+  @extend %clearfix;
+
+  margin-left: -2%;
+  margin-right: -2%;
+}
+
+.post-listing__item {
+  position: relative;
+  width: 46%;
+  float: left;
+  margin: 2%;
+  border: 1px solid $border-color;
+  border-radius: 4px;
+  text-align: center;
+
+  &:hover {
+    box-shadow: 0 2px 4px 2px rgba(0,0,0,0.04);
+  }
+}
+
+.post-listing__link {
+  display: block;
+  height: 290px;
+  color: inherit;
+
+  &:hover {
+    color: inherit;
+  }
+}
+
+.post-listing__image {
+  padding: 15px;
+}
+
+.post-listing__meta {
+  border-top: 1px solid $border-color;
+  font-size: 11px;
+  padding: 15px;
+  text-transform: uppercase;
+  background-color: #fafafa;
+  box-shadow: inset 0 2px 1px 0px rgba(0,0,0,0.03);
+}
+
+.post-listing__date,
+.post-listing__comment-count {
+  display: inline-block;
+  padding: 0 6px;
+}
+
+.post-listing__date {
+  color: lighten($text-color, 30%);
+}
+
+.post-listing__title {
+  margin-top: 0;
+  padding: 0 15px 15px;
+  font-weight: $font-weight-normal;
+  font-size: 21px;
+}

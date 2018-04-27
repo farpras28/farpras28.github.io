@@ -1,0 +1,25 @@
+# general description
+title:              NayaabKhan
+subtitle:           Thoughts of a frontend developer. Also rants.
+description:        Nayaabkhan is a Team Leader and a Frontend developer at StarOfService.com. He writes about React, Redux, Design and DIY.
+
+# site settings
+baseurl:
+url:                http://nayaabkhan.me
+permalink:          /:categories/:title
+
+# social
+twitter_username:   iamnayaabkhan
+github_username:    nayaabkhan
+facebook_username:  nayaab.in
+email:              khannayaab@gmail.com
+
+# build settings
+markdown:           kramdown
+kramdown:
+  input:            GFM
+  hard_wrap:        false
+  highlighter:      rouge
+sass:
+  style:            :compressed
+exclude:            ['LICENSE', 'README.md']

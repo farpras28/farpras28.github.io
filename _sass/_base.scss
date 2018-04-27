@@ -1,0 +1,125 @@
+/**
+ * Sensible box sizing
+ */
+* {
+  box-sizing: border-box;
+}
+
+/**
+ * Reset some basic elements
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Base styling
+ */
+body {
+  font: $font-weight-normal #{$base-font-size}/#{$base-line-height} $base-font-family;
+  color: $text-color;
+  background-color: $background-color;
+}
+
+/**
+ * Set `margin-bottom` to maintain vertycal rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+ul, ol, dl, figure, table,
+%vertical-rhythm {
+  margin-bottom: $base-spacing;
+}
+
+/**
+ * Links
+ */
+a {
+  transition: .4s color;
+  text-decoration: none;
+  color: $brand-color;
+
+  &:hover {
+    color: lighten($brand-color, 20%);
+  }
+}
+
+/**
+ * Image and mini-hack to prevent ghost margin
+ */
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+/**
+ * Figures
+ */
+figure > img {
+  display: block;
+}
+
+figcaption {
+  font-size: $small-font-size;
+}
+
+/**
+ * Lists
+ */
+ul, ol {
+  margin-left: $base-spacing;
+}
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $font-weight-normal;
+  line-height: normal;
+  color: $text-color;
+}
+
+/**
+ * Blockquotes
+ */
+blockquote {
+  margin: $base-spacing*2;
+  font-style: italic;
+  font-weight: $font-weight-light;
+  font-size: $base-font-size*1.1;
+  text-align: center;
+  color: lighten($text-color, 25%);
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+/**
+ * Code snippet styling
+ * check _syntax-highlighting.scss for more
+ */
+pre,
+code {
+  font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-size: 13px;
+}
+
+/**
+ * Horizontal Rules
+ */
+hr {
+  display: block;
+  border: 0;
+  border-top: 1px solid $border-color;
+}
+
+/**
+ * SVG sizing hack
+ */
+svg {
+  display: block;
+}

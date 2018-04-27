@@ -1,0 +1,44 @@
+<div class="post-heading">
+  <h1 class="post-heading__title">{{ include.post.title }}</h1>
+  <p class="post-heading__date">{{ page.date | date: "%B %-d, %Y" }}</p>
+</div>
+
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="post__content" itemprop="articleBody">
+    {{ include.post.content }}
+  </div>
+
+  <div class="post__sharer">
+    <h3 class="post__sharer__title">Liked what you read?</h3>
+    <h4 class="post__sharer__subtitle">Then help spread it.</h4>
+
+    {% capture full_url %}{{ include.post.url | prepend: site.url }}{% endcapture %}
+    {% include tweet-button.html text=include.post.title url=full_url via=site.twitter_username related=site.twitter_username hashtags=include.post.hashtags %}
+  </div>
+
+  <div class="post__comments">
+    <div id="disqus_thread"></div>
+    <script>
+    /**
+    * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+
+    s.src = '//nayaabkhan-me.disqus.com/embed.js';
+
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+  </div>
+
+</article>
