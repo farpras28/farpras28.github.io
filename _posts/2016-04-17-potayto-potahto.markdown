@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Potayto, Potahto
-category: Opinion
+category: Random
 date: April 17, 2016
 hashtags: reactjs,javascript
 ---

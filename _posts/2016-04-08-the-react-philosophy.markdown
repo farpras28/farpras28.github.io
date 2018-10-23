@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The React Philosophy
-category: React
+category: Music
 date: April 8, 2016
 hashtags: reactjs,javascript
 ---

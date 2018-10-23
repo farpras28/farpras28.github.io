@@ -1,7 +1,7 @@
 ---
 layout: post
 title: React for absolute beginners
-category: React
+category: Music
 date: April 2, 2016
 hashtags: reactjs,javascript
 ---

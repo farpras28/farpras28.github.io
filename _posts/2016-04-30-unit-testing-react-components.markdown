@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Unit Testing React Components
-category: React
+category: Music
 date: April 30, 2016
 hashtags: reactjs,unittesting,javascript
 ---
