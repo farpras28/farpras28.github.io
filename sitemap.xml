@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://www.nayaabkhan.me/</loc>
+    <loc>http://farpras.id/</loc>
     <changefreq>hourly</changefreq>
   </url>
   <url>
-    <loc>http://www.nayaabkhan.me/react</loc>
+    <loc>http://farpras.id/music</loc>
     <changefreq>hourly</changefreq>
   </url>
   <url>
-    <loc>http://www.nayaabkhan.me/opinion</loc>
+    <loc>http://farpras.id/random</loc>
     <changefreq>hourly</changefreq>
   </url>
   <url>
-    <loc>http://www.nayaabkhan.me/design</loc>
+    <loc>http://farpras.id/design</loc>
     <changefreq>hourly</changefreq>
   </url>
   <url>
-    <loc>http://www.nayaabkhan.me/about</loc>
+    <loc>http://farpras.id/about</loc>
     <changefreq>hourly</changefreq>
   </url>
 </urlset>

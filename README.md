@@ -1,2 +1,2 @@
-# nayaabkhan.github.io
-Website for Nayaabkhan Khan, UI Designer and Frontend Developer
+# farpras28.github.io
+Website for farpras, An Indomie eater.
