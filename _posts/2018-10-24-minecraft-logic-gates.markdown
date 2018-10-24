@@ -30,6 +30,7 @@ An AND gate (A^B) is used with two or more switches or other inputs. The output 
 A NAND gate -(A^B) is the opposite to the AND gate. The output is toggled to "off" ONLY when both switches are toggled to "on". Otherwise, the output is set to "on". This gate also requires two or more inputs.
 
 **OR Gate:**
+
 An OR gate (AvB) uses two or more inputs. Whenever any input is "on", the output is to "on". The only time the output is "off" is when all inputs are "off".
 
 **NOR Gate:**
@@ -49,10 +50,11 @@ An XNOR gate (A⇔B) is the opposite of an XOR gate. It uses two inputs. When bo
 In this gate, the output is toggled to "on" only when input A is "on" and input B is "off". If input A is "off" and input B is "on", the output will remain "off". If both inputs are "off" or "on", the output will remain "off". This makes this gate useful when needing a specific order of inputs to trigger the output.
 
 **Diodes:**
+
 Diodes prevent power from flowing backwards in a circuit. This can be very useful if you need to isolate an input wire to avoid feedback, or need to merge two inputs into one (such as in the OR gate above).
 There are three flavors of diodes: The one-block one (up to four) tick delay repeater, the three-block two tick delay redstone torch repeater(also called a classic or traditional repeater), and the two-block, zero tick delay Glowstone diode.
 
-> [https://minecraft.gamepedia.com/Tutorials/Basic_logic_gates](https://minecraft.gamepedia.com/Tutorials/Basic_logic_gates)
+Reference: [https://minecraft.gamepedia.com/Tutorials/Basic_logic_gates](https://minecraft.gamepedia.com/Tutorials/Basic_logic_gates)
 
 [keyDiagram]: https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/8/8c/MCGatesKey.png "Key for Diagrams"
 [ioGate]: https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/8/83/BasicGate.png "I/O Gate"
