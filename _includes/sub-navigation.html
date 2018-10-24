@@ -1,16 +1,16 @@
 <br>
 <div class="sub-navigation">
-  <div class="wrapper">
-    <ul class="sub-navigation__list">
-      <li class="sub-navigation__item {% if page.url == '/' %}sub-navigation__item--active{% endif %}">
-        <a href="{{ site.baseurl }}/" class="sub-navigation__link">All</a>
-      </li>
-      {% for category in site.categories %}
-        {% capture category_slug %}{{ category | first | slugify }}{% endcapture %}
-        <li class="sub-navigation__item {% if page.url contains category_slug %}sub-navigation__item--active{% endif %}">
-          <a href="{{ site.baseurl }}/{{ category_slug }}" class="sub-navigation__link">{{ category | first }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
+	<div class="wrapper">
+		<ul class="sub-navigation__list">
+			<li class="sub-navigation__item {% if page.url == '/' %}sub-navigation__item--active{% endif %}">
+				<a href="{{ site.baseurl }}/" class="sub-navigation__link">All</a>
+			</li>
+			{% for category in site.categories %}
+			{% capture category_slug %}{{ category | first | slugify }}{% endcapture %}
+			<li class="sub-navigation__item {% if page.url contains category_slug %}sub-navigation__item--active{% endif %}">
+				<a href="{{ site.baseurl }}/{{ category_slug }}" class="sub-navigation__link">{{ category | first }}</a>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
 </div>

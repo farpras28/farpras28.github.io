@@ -1,49 +1,46 @@
 <header class="site-header">
-  <div class="wrapper">
-    <nav class="site-navigation">
-      <div class="site-navigation__left">
-        <ul class="site-navigation__list">
-          <li class="site-navigation__item">
-            <a href="{{ site.baseurl }}/" class="site-navigation__link">Home</a>
-          </li>
-          <li class="site-navigation__item">
-            <a href="{{ site.baseurl }}/about" class="site-navigation__link">About</a>
-          </li>
-        </ul>
-      </div>
-      <div class="site-navigation__right">
-        <ul class="site-navigation__list">
-          <li class="site-navigation__item">
-            <a href="mailto:{{ site.email }}" class="site-navigation__link">Email</a>
-          </li>
-          <li class="site-navigation__item">
-            <a href="http://github.com/{{ site.github_username }}" class="site-navigation__link" target="_blank">GitHub</a>
-          </li>
-        </ul>
-      </div>
-      <div class="site-navigation__logo">
-        <a href="{{ site.baseurl }}/">
-          <!-- {% include svg/logo.svg %} -->
-          <img src="{{ site.baseurl }}/images/farpras100px.png" height="50px" width="50px" alt="farpras.id">
+	<div class="wrapper">
+		<nav class="site-navigation">
+			<div class="site-navigation__left">
+				<ul class="site-navigation__list">
+					<li class="site-navigation__item">
+						<a href="{{ site.baseurl }}/" class="site-navigation__link">Home</a>
+					</li>
+					<li class="site-navigation__item">
+						<a href="{{ site.baseurl }}/about" class="site-navigation__link">About</a>
+					</li>
+				</ul>
+			</div>
+			<div class="site-navigation__right">
+				<ul class="site-navigation__list">
+					<li class="site-navigation__item">
+						<a href="mailto:{{ site.email }}" class="site-navigation__link">Email</a>
+					</li>
+					<li class="site-navigation__item">
+						<a href="http://github.com/{{ site.github_username }}" class="site-navigation__link" target="_blank">GitHub</a>
+					</li>
+				</ul>
+			</div>
+			<div class="site-navigation__logo">
+				<a href="{{ site.baseurl }}/">
+					<!-- {% include svg/logo.svg %} -->
+					<img src="{{ site.baseurl }}/images/farpras100px.png" height="50px" width="50px" alt="farpras.id">
+				</a>
+			</div>
+		</nav>
+		<div class="site-hero">
+			{% if page.path contains "_posts" %}
+			<img src="{{ page.slug | prepend: '/images/hero-images/' | prepend: site.baseurl | append: '.png' }}" />
+			{% else %}
+			<h1 class="site-hero__title">
+				{{ site.title }}
+			</h1>
 
-        </a>
-      </div>
-    </nav>
-    <div class="site-hero">
-      {% if page.path contains "_posts" %}
-        <img src="{{ page.slug | prepend: '/images/hero-images/' | prepend: site.baseurl | append: '.png' }}"/>
-      {% else %}
-      <h1 class="site-hero__title">
-        {{ site.title }}
-      </h1>
-
-      <h2 class="site-hero__subtitle">
-        <!-- {{ site.subtitle }} -->
-        <script src="http://farpras.xyz/js/quotes.js"></script> &middot; <a href="https://github.com/farpras/farpras.github.io/blob/master/js/quotes.js">quotes.js</a>
-      </h2>
-      
-
-      {% endif %}
-    </div>
-  </div>
+			<h2 class="site-hero__subtitle">
+				<!-- {{ site.subtitle }} -->
+				<script src="http://farpras.xyz/js/quotes.js"></script> &middot; <a href="https://github.com/farpras/farpras.github.io/blob/master/js/quotes.js">quotes.js</a>
+			</h2>
+			{% endif %}
+		</div>
+	</div>
 </header>

@@ -1,57 +1,68 @@
 {% capture title %}{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}{% endcapture %}
-{% capture description %}{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines }}{% else %}{{ site.description }}{% endif %}{% endcapture %}
+{% capture description %}{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines }}{% else %}{{
+site.description }}{% endif %}{% endcapture %}
 {% capture url %}{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}{% endcapture %}
-{% capture image %}{% if page.slug %}{{ page.slug | prepend: '/images/article-thumbs/' | prepend: site.baseurl | prepend: site.url | append: '.png' }}{% endif %}{% endcapture %}
+{% capture image %}{% if page.slug %}{{ page.slug | prepend: '/images/article-thumbs/' | prepend: site.baseurl |
+prepend: site.url | append: '.png' }}{% endif %}{% endcapture %}
 
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{{ title }}</title>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta name="description" content="{{ description | truncate: 160 }}">
+	<title>{{ title }}</title>
 
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-    <link rel="canonical" href="{{ url }}">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+	<meta name="description" content="{{ description | truncate: 160 }}">
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@{{ site.twitter_username }}">
+	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+	<link rel="canonical" href="{{ url }}">
+	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+	 crossorigin="anonymous">
 
-    <meta property="og:site_name" content="{{ site.title }}">
-    <meta property="og:url" content="{{ url }}">
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="{{ title }}">
-    <meta property="og:description" content="{{ description }}">
-    <meta property="og:image" content="{{ image }}">
-    <meta property="article:author" content="https://www.facebook.com/{{ site.facebook_username }}">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@{{ site.twitter_username }}">
 
-    <script src="https://use.typekit.net/zsw3brj.js"></script>
-    <script>try{Typekit.load({ async: false });}catch(e){}</script>
+	<meta property="og:site_name" content="{{ site.title }}">
+	<meta property="og:url" content="{{ url }}">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="{{ title }}">
+	<meta property="og:description" content="{{ description }}">
+	<meta property="og:image" content="{{ image }}">
+	<meta property="article:author" content="https://www.facebook.com/{{ site.facebook_username }}">
 
-    {% include favicons.html %}
-  </head>
+	<script src="https://use.typekit.net/zsw3brj.js"></script>
+	<script>
+		try {
+			Typekit.load({
+				async: false
+			});
+		} catch (e) {}
+	</script>
 
-  <body>
+	{% include favicons.html %}
+</head>
 
-    {% include header.html %}
+<body>
 
-    {% include sub-navigation.html %}
+	{% include header.html %}
 
-    <div class="site-page">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
+	{% include sub-navigation.html %}
 
-    {% include footer.html %}
+	<div class="site-page">
+		<div class="wrapper">
+			{{ content }}
+		</div>
+	</div>
 
-    {% if jekyll.environment == 'production' %}
-      {% include google-analytics.html %}
-    {% endif %}
-  </body>
+	{% include footer.html %}
+
+	{% if jekyll.environment == 'production' %}
+	{% include google-analytics.html %}
+	{% endif %}
+</body>
+
 </html>
