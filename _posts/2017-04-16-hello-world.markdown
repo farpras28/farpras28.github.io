@@ -7,6 +7,6 @@ hashtags: hello world
 comments: true
 ---
 
-Hello and welcome to my website! :musical_note:
+Hello and welcome to my website!
 
-Thanks for visit! :raised_hands:
+Thanks for visit!
