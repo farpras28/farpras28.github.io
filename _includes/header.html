@@ -33,6 +33,7 @@
     <div class="site-hero">
       {% if page.path contains "_posts" %}
         <img src="{{ page.slug | prepend: '/images/hero-images/' | prepend: site.baseurl | append: '.png' }}"/>
+        <br>
       {% else %}
       <h1 class="site-hero__title">
         {{ site.title }}
