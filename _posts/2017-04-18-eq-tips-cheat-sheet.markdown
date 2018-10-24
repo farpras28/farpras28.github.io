@@ -4,6 +4,7 @@ title: EQ Tips Cheat Sheet
 category: Music
 date: April 18, 2017
 hashtags: music,EQ,cheat sheet
+comments: true
 ---
 
 Tips for equalization. By frequency, by instrument with a glossary.

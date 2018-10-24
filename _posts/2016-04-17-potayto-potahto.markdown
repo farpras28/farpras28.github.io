@@ -4,6 +4,7 @@ title: Potayto, Potahto
 category: Random
 date: April 17, 2016
 hashtags: reactjs,javascript
+comments: true
 ---
 
 So these days I am mentoring my team on React. As an exercise I asked them to write a rating widget. And I was blown seeing the different approaches they took. Almost each implementation was different.

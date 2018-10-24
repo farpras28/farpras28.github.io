@@ -15,8 +15,9 @@
     {% capture full_url %}{{ include.post.url | prepend: site.url }}{% endcapture %}
     {% include tweet-button.html text=include.post.title url=full_url via=site.twitter_username related=site.twitter_username hashtags=include.post.hashtags %}
   </div>
-
+  
   <div class="post__comments">
+    {% if page.comments %}
     <div id="disqus_thread"></div>
     <script>
 
@@ -37,7 +38,7 @@
     })();
     </script>
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                            
+    {% endif %}
   </div>
 
 </article>
