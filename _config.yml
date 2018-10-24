@@ -1,11 +1,11 @@
 # general description
-title:              farpras28
+title:              farpras.id
 subtitle:           I eat Indomie a lot.
 description:        
 
 # site settings
 baseurl:
-url:                http://repo.farpras.id
+url:                http://farpras.id
 permalink:          /:categories/:title
 
 # social
