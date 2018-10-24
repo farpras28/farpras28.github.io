@@ -23,3 +23,5 @@ kramdown:
 sass:
   style:            :compressed
 exclude:            ['LICENSE', 'README.md']
+gems:
+  - jemoji
