@@ -6,9 +6,9 @@
 				<img src="{{ post.slug | prepend: '/images/hero-images/' | prepend: site.baseurl | append: '.png' }}" />
 			</div>
 
-			<div class="post-listing__title">
+			<h2 class="post-listing__title">
 				{{ post.title }}
-			</div>
+			</h2>
 		</a>
 		<div class="post-listing__meta">
 			<div class="post-listing__date">{{ post.date | date: "%B %-d, %Y" }}</div>
