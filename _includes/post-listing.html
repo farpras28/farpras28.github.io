@@ -6,11 +6,10 @@
 				<img src="{{ post.slug | prepend: '/images/hero-images/' | prepend: site.baseurl | append: '.png' }}" />
 			</div>
 
-			<h2 class="post-listing__title">
+			<h2 class="post-listing__title" style="margin-bottop: 0px">
 				{{ post.title }}
 			</h2>
 		</a>
-
 		<div class="post-listing__meta">
 			<div class="post-listing__date">{{ post.date | date: "%B %-d, %Y" }}</div>
 			<div class="post-listing__comment-count"><a href="{{ post.url | prepend: site.url }}#disqus_thread"></a></div>
