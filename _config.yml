@@ -5,7 +5,7 @@ baseurl: ""
 # compass configuration
 compass:
   # an avatar or logo (optional)
-  logo: "/images/farpras.png"
+  logo: "/assets/img/farpras_circle.png"
   # author will appear under the avatar (optional)
   author: "farpras"
   # tagline will appear under the title (optional)
