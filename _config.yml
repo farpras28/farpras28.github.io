@@ -7,7 +7,7 @@ compass:
   # an avatar or logo (optional)
   logo: "/images/compass.png"
   # author will appear under the avatar (optional)
-  author: "Compass"
+  author: "farpras"
   # tagline will appear under the title (optional)
   tagline: "This is just a landing page thing."
   # if include_content is true, the contents of the content.html include will be
@@ -18,7 +18,7 @@ compass:
   # Tracking Code to that file.
   include_analytics: false
   # Twitter @username (as defined by the Twitter Card specs)
-  twitter: "compass"
+  twitter: "farpras"
 
 # exclude
 exclude: ["CNAME", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
