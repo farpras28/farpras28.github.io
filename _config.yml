@@ -1,6 +1,6 @@
 # general configuration
-url: http://excentris.net
-baseurl: ''
+url: http://farpras.my.id
+baseurl: ""
 
 # compass configuration
 compass:
@@ -9,7 +9,7 @@ compass:
   # author will appear under the avatar (optional)
   author: "Compass"
   # tagline will appear under the title (optional)
-  tagline: "The <a href='http://jekyllrb.com'>Jekyll</a> theme for your personal landing page"
+  tagline: "This is just a landing page thing."
   # if include_content is true, the contents of the content.html include will be
   # added right above the generated item list, if present
   include_content: true
