@@ -16,6 +16,9 @@ main {
 	padding: 0 20px;
 }
 
+header_comms, main_comms {
+}
+
 /*** wrapper div for both header and main ***/
 .wrapper {
 	margin-top: 10%;
@@ -134,6 +137,9 @@ footer {
 		float: left;
 		width: 46%;
 		text-align: right;
+	}
+
+	header_comms, main_comms {
 	}
 
 	.author-container h1,
