@@ -143,9 +143,12 @@ footer {
 	}
 
 	.author-container h1,
-	.logo-container,
 	.tagline-container p {
 		text-align: right;
+	}
+
+	.logo-container p {
+		text-align: left;
 	}
 
 	main {
