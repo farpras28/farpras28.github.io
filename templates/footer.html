@@ -4,9 +4,15 @@
         <a href="http://github.com/farpras28">farpras</a>
     </p> -->
 	<p>
-		<small
-			>Hosted on GitHub Pages &mdash; Theme by
-			<a href="https://github.com/orderedlist">orderedlist</a></small
+		<small>
+			<span id="year"></span> &copy;
+			<a href="https://twitter.com/farpras">@farpras</a></small
 		>
 	</p>
 </footer>
+
+<script>
+	var date = new Date();
+	var y = date.getFullYear();
+	document.getElementById("year").innerHTML = y;
+</script>
