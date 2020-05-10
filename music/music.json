@@ -1,0 +1,34 @@
+{
+	"music": [
+		{
+			"band": "SawanoHiroyuki[nZk]",
+			"title": "sh0ut (Instrumental Cover)",
+			"link": {
+				"wav": "",
+				"mp3": "https://github.com/farpras/farpras.github.io/raw/master/files/music/recreators_op2_master.mp3",
+				"youtube": "cdbddaf-Kdg",
+				"soundcloud": "332645732"
+			}
+		},
+		{
+			"band": "DAOKO x Kenshi Yonezu",
+			"title": "Uchiage Hanabi (Instrumental Cover)",
+			"link": {
+				"wav": "",
+				"mp3": "https://github.com/farpras/cdn01/raw/gh-pages/music/uchiage_hanabi.mp3",
+				"youtube": "",
+				"soundcloud": ""
+			}
+		},
+		{
+			"band": "frederic",
+			"title": "Oddloop (Instrumental Cover)",
+			"link": {
+				"wav": "",
+				"mp3": "https://drive.google.com/file/d/1TDoAVyHfQfbCG8TDftQ1VNuS_XnyH2ki/view?usp=sharing",
+				"youtube": "7jACXXNhPFU",
+				"soundcloud": "811036726"
+			}
+		}
+	]
+}

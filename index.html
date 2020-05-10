@@ -1,29 +1,95 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="farprasApp">
+<html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<link rel="stylesheet" href="assets/css/bootstrap-darkly.min.css" />
+		<link rel="stylesheet" href="assets/css/custom.css" />
+		<link rel="stylesheet" href="assets/css/all.css" />
+		<link
+			rel="shortcut icon"
+			href="assets/img/farpras.ico"
+			type="image/x-icon"
+		/>
 		<title>farpras</title>
-
-		<link rel="stylesheet" href="assets/css/styles.css" />
-		<link rel="stylesheet" href="assets/css/pygment_trac.css" />
-		<script src="assets/js/angular.min.js"></script>
-		<script src="app/app.js"></script>
-		<script src="assets/js/moment.min.js"></script>
-		<meta name="viewport" content="width=device-width" />
-		<link rel="shortcut icon" href="farpras.ico" type="image/x-icon" />
-		<!--[if lt IE 9]>
-			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
 	</head>
 	<body>
-		<div class="wrapper">
-			<ng-include src="'templates/header.html'"></ng-include>
-			<!-- <ng-include src="'content/music.html'"></ng-include> -->
-			<!-- <ng-include src="'content/commissions.html'"></ng-include> -->
-			<ng-include src="'content/home.html'"></ng-include>
-			<ng-include src="'templates/footer.html'"></ng-include>
+		<div class="container h-100">
+			<div class="row h-100 justify-content-center align-items-center">
+				<div class="col-12 text-center">
+					<img
+						src="assets/img/farpras.png"
+						class="rounded"
+						width="50"
+						alt="&copy; 2020 farpras"
+						data-toggle="tooltip"
+						data-placement="top"
+						title="&copy; 2020 farpras"
+					/>
+					<h1 class="mb-0">farpras.my.id</h1>
+					<br />
+					<a
+						href="music"
+						class="btn btn-primary mb-1"
+						data-toggle="tooltip"
+						data-placement="bottom"
+						title="Download my music here!"
+						><i class="fa fa-music"></i>&nbsp; Music</a
+					>
+					<a
+						href="commissions"
+						class="btn btn-primary mb-1"
+						data-toggle="tooltip"
+						data-placement="bottom"
+						title="My commission details & stuff"
+						><i class="fa fa-guitar"></i>&nbsp; Commissions</a
+					>
+					<a
+						href="http://twitter.com/farpras"
+						class="btn btn-primary mb-1"
+						data-toggle="tooltip"
+						data-placement="bottom"
+						title="http://twitter.com/farpras"
+						><i class="fab fa-twitter"></i
+					></a>
+					<a
+						href="http://www.youtube.com/FarPras"
+						class="btn btn-primary mb-1"
+						data-toggle="tooltip"
+						data-placement="bottom"
+						title="http://www.youtube.com/FarPras"
+						><i class="fab fa-youtube"></i
+					></a>
+					<a
+						href="mailto:farpras28@outlook.com"
+						class="btn btn-primary mb-1"
+						data-toggle="tooltip"
+						data-placement="bottom"
+						title="farpras28@outlook.com"
+						><i class="fa fa-at"></i
+					></a>
+					<a
+						href="about"
+						class="btn btn-primary mb-1"
+						data-toggle="tooltip"
+						data-placement="bottom"
+						title="Some of my info & stuff"
+						><i class="fa fa-info-circle"></i
+					></a>
+				</div>
+			</div>
 		</div>
-		<script src="assets/js/scale.fix.js"></script>
+
+		<script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+		<script src="assets/js/popper.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script>
+			$(function () {
+				$('[data-toggle="tooltip"]').tooltip();
+			});
+		</script>
 	</body>
 </html>
